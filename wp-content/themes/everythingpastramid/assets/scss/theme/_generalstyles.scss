@@ -1,0 +1,349 @@
+.reveal {
+    padding: 5%;
+    margin-bottom: 5% !important;
+}
+
+.full-width {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+
+    & .columns {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.section {
+    display: block;
+    padding-top: 3%;
+
+    @media #{$small-only} {
+        padding: 0 15px;
+    }
+
+    &.section-sm {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+.section-bottom {
+
+    @media #{$small-only} {
+        margin-bottom: 30px;
+    }
+
+    @media #{$medium-up} {
+        padding-bottom: 5%;
+    }
+}
+
+.columns:last-child:not(:first-child) {
+float: left;
+}
+
+a {
+    color: $secondary-color;
+}
+
+a:hover {
+    color: $hover-color;
+}
+
+hr {
+    border-bottom: 4px solid $color-blue;
+}
+
+.compressed-font {
+    font-family: $compressed-font;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #879fa0;
+}
+
+.button, .btn {
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: $secondary-color;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    @media #{$medium-up} {
+        font-size: 18px;
+    }
+}
+
+a:hover.button, a:hover.btn {
+    background-color: $color-blue;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+
+    .text-title {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 800;
+        font-family: $sans-serif;
+
+        @media #{$medium-up} {
+            font-size: 22px;
+        }
+
+        @media #{$large-up} {
+            font-size: 24px;
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 800;
+        font-family: $sans-serif;
+        margin-bottom: 30px;
+
+        @media #{$medium-up} {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        @media #{$large-up} {
+            font-size: 60px;
+            margin-bottom: 80px;
+        }
+    }
+
+    .hero-image {
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 150px;
+        min-height: 300px;
+
+        @media #{$medium-up} {
+            min-height: 330px;
+        }
+
+        @media #{$large-up} {
+            min-height: 620px;
+        }
+    }
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,.3);
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    align-items: flex-end;
+}
+
+.butcher-knives {
+    margin: 0;
+    padding: 30px;
+
+    img {
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+        @media #{$large-up} {
+            max-width: 350px;
+        }
+    }
+}
+
+.home-images-container {
+    background-color: #F1EFE8;
+
+    @media #{$medium-up} {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.home-images-item {
+    width: 50%;
+}
+
+.blue-banner {
+    background-color: $color-blue;
+    padding: 20px;
+    color: #fff;
+    margin: 30px 0 50px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.flex {
+    @media #{$medium-up} {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.meat-type-container{
+    text-align: center;
+
+    h3 {
+        color: $secondary-color;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .meat-type {
+        background-color: $color-blue;
+        text-transform: uppercase;
+        padding: 10px;
+
+        h4 {
+            color: #fff;
+            margin-bottom: 0;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .meat-cuts {
+        background-color: #F1EFE8;
+        padding: 20px;
+
+        @media #{$medium-up} {
+            min-height: 250px;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 0;
+
+            li {
+                font-size: 24px;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.product-callout {
+    border: 2px solid #efefef;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+
+    @media #{$small-only} {
+        margin: 30px 0;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 14px;
+        color: $secondary-color;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+    img {
+        max-width: 250px;
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.product-description {
+    @media #{$medium-up} {
+        padding: 0 50px;
+    }
+}
+
+.product {
+    @media #{$medium-up} {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.img-text-banner {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 5%;
+    font-weight: 800;
+}
+
+.recipe-container {
+    padding: 8%;
+    background-color: #F1EFE8;
+    border-top: 5px solid $color-blue;
+    margin-bottom: 30px;
+}
+
+.border-top {
+    border-top: 5px solid #F1EFE8;
+    margin-top: 3%;
+}
+
+.testimonial-body {
+    padding-top: 3%;
+
+    p {
+    font-size: 20px;
+
+        @media #{$medium-up} {
+            font-size: 24px;
+        }
+    }
+}
+
+.testimonial-details {
+    h4 {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #666;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
+.reviews-home {
+    h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+}

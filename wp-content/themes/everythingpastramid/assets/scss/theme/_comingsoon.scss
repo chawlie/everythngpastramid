@@ -1,0 +1,268 @@
+.coming-soon-body {
+    font-family: $sans-serif;
+    background-color: $color-tan;
+    background-image: url(../../site/images/butcher-paper.jpg);
+    text-align: center;
+}
+
+.coming-soon-logo {
+    width: 200px;
+    margin: 0 auto;
+    padding: 40px 0 40px;
+
+    @media #{$medium-up} {
+        width: 330px;
+        padding: 80px 0 60px;
+    }
+}
+
+.coming-soon-headline {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    color: $primary-color;
+    padding: 50px 20px;
+    margin: 0 0 30px;
+    line-height: 1;
+    letter-spacing: 4px;
+
+    @media #{$medium-up} {
+        font-size: 28px;
+    }
+
+    @media #{$large-up} {
+        font-size: 30px;
+    }
+
+    span.gray {
+        color: $color-gray;
+    }
+
+    span.blue {
+        color: $color-blue;
+    }
+}
+
+.coming-soon-hero-image {
+    border: 4px solid $primary-color;
+}
+
+.cs-product-container {
+    border: 4px solid $primary-color;
+    padding: 30px;
+    margin-top: 30px;
+
+    @media #{$medium-up} {
+        min-height: 700px;
+    }
+
+    h2 {
+        border-bottom: 4px solid $primary-color;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        font-size: 50px;
+        color: $secondary-color;
+
+        @media #{$medium-up} {
+            font-size: 60px;
+        }
+
+        @media #{$large-up} {
+            font-size: 80px;
+        }
+    }
+
+    h3 {
+        color: $secondary-color;
+        font-size: 20px;
+
+        @media #{$medium-up} {
+            font-size: 28px;
+        }
+    }
+
+    ul {
+        margin-left: 0;
+
+        li {
+            list-style: none;
+            font-family: $compressed-font;
+            font-size: 30px;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1.25;
+
+            @media #{$medium-up} {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .cs-product-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        position: relative;
+
+        @media #{$medium-up} {
+            min-height: 240px;
+        }
+    }
+}
+
+.cs-product-list {
+    h3 {
+        position: relative;
+        margin-top: 30px;
+
+        &:before {
+            content:'';
+            width: 25%;
+            height: 4px;
+            background-color: $primary-color;
+            position: absolute;
+            left: 0;
+            top: 10px;
+
+            @media #{$medium-up} {
+                top: 15px;
+            }
+        }
+
+        &:after {
+            content:'';
+            width: 25%;
+            height: 4px;
+            background-color: $primary-color;
+            position: absolute;
+            right: 0;
+            top: 10px;
+
+            @media #{$medium-up} {
+                top: 15px;
+            }
+        }
+    }
+}
+.banner-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .angled-banner {
+        background-color: $primary-color;
+        margin: 40px 0;
+        width:110%;
+        position: relative;
+        top:-5%;
+        left:-5%;
+        transform:rotate(-5deg);
+
+        @media #{$medium-up} {
+            margin: 100px 0;
+        }
+
+        h1 {
+            color: $secondary-color;
+            font-size: 26px;
+            padding: 15px 0;
+
+            @media #{$medium-up} {
+                font-size: 60px;
+            }
+
+            @media #{$large-up} {
+                font-size: 90px;
+            }
+        }
+    }
+}
+
+.cs-contact-container {
+    img {
+        border: 4px solid $primary-color;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 24;
+        letter-spacing: 4px;
+
+        @media #{$medium-up} {
+            font-size: 36px;
+        }
+
+        @media #{$large-up} {
+            font-size: 60px;
+        }
+    }
+}
+
+.cs-footer-logo {
+    padding: 0 20px;
+}
+
+.cs-contact-info {
+    padding: 30px;
+    max-width: 500px;
+    margin: 30px auto 60px;
+
+    h3 {
+        font-size: 55px;
+        line-height: .5;
+        margin-top: 20px;
+
+        @media #{$medium-up} {
+            font-size: 70px;
+        }
+
+        a {
+            color: $primary-color;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 400;
+
+        @media #{$medium-up} {
+            font-size: 26px;
+        }
+    }
+}
+
+.established {
+    font-family: $serif;
+    font-size: 20px;
+    color: $primary-color;
+    margin: 30px;
+
+    @media #{$medium-up}{
+        font-size: 24px;
+    }
+}
+
+.home-slider {
+    margin: 30px 0;
+
+    @media #{$medium-up} {
+        margin: 50px 0;
+    }
+}
+
+.home-slide-gallery {
+    border: 4px solid $primary-color;
+}
+
+.orbit-bullets button {
+    background-color: #fff;
+}
+
+.orbit-bullets button.is-active {
+    background-color: #b5333f;
+}

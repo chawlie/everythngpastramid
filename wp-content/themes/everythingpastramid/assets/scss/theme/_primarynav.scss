@@ -1,0 +1,177 @@
+/* Primary navigation styles */
+@media (max-width: 999px) {
+    .page-header {
+        display: none;
+    }
+}
+
+.primary-nav {
+    display: block;
+
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    & > ul {
+        position: relative;
+        float: right;
+        padding: 0;
+
+        & > li {
+            position: relative;
+            float: left;
+            padding: 0;
+            margin: 0;
+
+            @media #{$large-up} {
+                margin-right: 20px;
+            }
+
+            a {
+                display: inline-block;
+                padding: 10px;
+                color: $dark-text;
+                text-transform: uppercase;
+                font-weight: 900;
+                letter-spacing: 1px;
+                font-size: 16px;
+
+                @media #{$medium-up} {
+                    font-size: 14px;
+                }
+
+                @media #{$large-up} {
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    color: $color-blue;
+                    background-color: #fff;
+                }
+            }
+
+            .caret {
+                color: #fff;
+                margin: 0 0 0 10px;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                display: none;
+
+                &:before {
+                    content: $fa-var-caret-down;
+                    color: $color-blue;
+                }
+            }
+
+            &.menu-item-has-children {
+                .caret {
+                    display: inline-block;
+                }
+            }
+
+            .sub-menu {
+                position: absolute;
+                display: block;
+                width: 200px;
+                opacity: 0;
+                visibility: hidden;
+                left: 0;
+                border: 1px solid $color-light-gray;
+                z-index: 100;
+
+                li {
+                    position: relative;
+                    text-align: left;
+                    background-color: #fff;
+
+                    &:last-child {
+                        border: none;
+                        margin: 0;
+                        padding-bottom: 20px;
+                    }
+
+                    a {
+                        display: block;
+                        padding: 20px 20px 0;
+                        line-height: 1.25;
+
+                        &:hover {
+                            color: $secondary-color;
+                        }
+                    }
+
+                    .caret {
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        margin-top: 0px;
+                        display: none;
+                    }
+
+                    &.menu-item-has-children {
+                        .caret {
+                            display: inline-block;
+
+                            &::before {
+                                content: $fa-var-caret-right;
+                                color: $color-blue;
+                            }
+                        }
+                    }
+
+                    .sub-menu {
+                        visibility: hidden;
+                        opacity: 0;
+                        top: 0;
+                        margin-top: 0;
+
+                        li {
+                            .caret {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .sub-menu {
+                            left: 100%;
+                            margin-left: 0;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: #fff;
+
+                .sub-menu {
+                    top: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            &.current_page_item {
+            }
+        }
+    }
+
+    li.btn a, li.button a {
+        color: #fff;
+        padding: 10px 20px;
+
+        &:hover {
+            background-color: $color-blue;
+            border-radius: 5px;
+            color: #fff;
+            padding: 10px 20px;
+        }
+    }
+}

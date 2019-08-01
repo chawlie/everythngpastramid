@@ -1,0 +1,64 @@
+.footer-background {
+    background-color: #555555;
+}
+
+.site-footer {
+    color: #FFF;
+    padding: 40px 0;
+    font-weight: 700;
+    text-align: center;
+    background-image: url(../../site/images/grunge-wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 340px) {
+        font-size: 14px;
+    }
+
+    @media #{$large-up} {
+        padding: 80px 0;
+        text-align: initial;
+    }
+
+    .telephone {
+        font-weight: 700;
+        a, a:hover {
+            color:#fff;
+        }
+    }
+}
+
+.footer-top {
+    padding: 50px 0 40px;
+
+    @media #{$small-only} {
+        padding: 25px 0 25px;
+    }
+}
+
+.footer-bottom {
+    background-color: $primary-color;
+    padding: 40px 0 30px;
+
+    @media #{$small-only} {
+        padding: 20px 0 15px;
+    }
+}
+
+.footer-text {
+    margin-bottom: 0px;
+
+    @media #{$large-up} {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+}
+
+.copyright {
+    font-family: $sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin: 30px 0 0;
+    font-weight: 900;
+    text-transform: uppercase;
+}

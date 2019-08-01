@@ -1,0 +1,29 @@
+.page-header {
+    height: 180px;
+    border-bottom: 2px solid #F1EFE8;
+}
+
+.menu-bar {
+    margin: 30px auto 0;
+}
+
+.primary-logo {
+    float: left;
+
+    img {
+        width: 200px;
+    }
+}
+
+.primary-nav {
+    display: inline-block;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

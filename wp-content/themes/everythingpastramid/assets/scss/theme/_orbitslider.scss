@@ -1,0 +1,17 @@
+.orbit-bullets button {
+    background-color: #ccc;
+}
+
+.orbit-previous, .orbit-next {
+    color: #ccc;
+}
+
+.orbit-container {
+    margin: 0 5%;
+}
+
+.orbit-controls {
+    @media #{$small-only} {
+        display: none;
+    }
+}

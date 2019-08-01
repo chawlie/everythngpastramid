@@ -1,0 +1,27 @@
+// Specific Colors
+$color-blue-primary: #214093; // need to delete
+$color-blue: #214093;
+$blue-light: #1d5491;
+$color-light-blue: #2779cc;
+$color-green: #8cb64e;
+$color-gray: #92a8aa;
+$color-gray-text: #879fa0;
+$color-light-gray: #ccc;
+$color-tan: #eac290;
+$dark-text: #444;
+
+// Theme Colors
+$primary-color: $color-blue; // Blue
+$secondary-color: #AB1D38; // Pastrami Color
+$hover-color: #214093;;
+$alert-color: #ed1c24;
+$success-color: $color-green;
+$warning-color: $primary-color;
+$info-color: #a0d3e8;
+
+// Font Settings
+$serif: Georgia, Times, "Times New Roman", serif;
+$sans-serif: sofia-pro, Arial, "Helvetica Neue", Helvetica, sans-serif;
+$compressed-font: "Arial Narrow", Arial, sans-serif;
+$paragraph-font: $sans-serif;
+$heading-font: $sans-serif;

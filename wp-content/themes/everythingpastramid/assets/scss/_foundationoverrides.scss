@@ -1,0 +1,16 @@
+.top-bar {
+    background-color: inherit;
+}
+
+.menu-icon:hover::after {
+    background-color: #FFF;
+    box-shadow: 0 7px 0 #fefefe,0 14px 0 #fefefe;
+}
+
+.button {
+    background-color: $secondary-color !important;
+
+    &:hover {
+        background-color: $hover-color !important;
+    }
+}
